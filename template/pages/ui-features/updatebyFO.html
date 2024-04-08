@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wayu&dash;Mart</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="/admin_-panel/template/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/admin_-panel/template/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="/admin_-panel/template/assets/vendors/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="/admin_-panel/template/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/admin_-panel/template/assets/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="/admin_-panel/template/assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/admin_-panel/template/assets/css/style.css">
+    <!-- <script src ="https://code.jquery.com/jquery-1.11.2.min.js"></script> -->
+    
+    
+     <!-- new css  -->
+     <link rel="stylesheet" href="assets/css/maps/new.css"> 
+     <link rel="stylesheet" href="assets/css/newstyle.css">
+     <link rel="stylesheet" href="/admin_-panel/template/assets/css/maps/new.css"> 
+     <link rel="stylesheet" href="/admin_-panel/template/assets/css/table.css">
+     <link rel="stylesheet" href="/admin_-panel/template/assets/css/style.css">
+     <link rel="stylesheet" href="/admin_-panel/template/assets/css/maps/new.css">
+
+
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="/admin_-panel/template/assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <!-- <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a> -->
+          <h1>WAYU MART</h1>
+          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="/admin_-panel/template/assets/images/w logo.jpg" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="/admin_-panel/template/assets/images/w logo.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Admin Host</h5>
+                  <span>Gold Member</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword  text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-calendar-today text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li> -->
+    
+          <!-- New Dashboard Starts Here -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Admin Dashboard</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic1">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/index.html">Super Admin</a></li>
+              
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/doclisttable.html">Doctor List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/distmang-list.html">District Manager List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/superviselist.html">Supervisor List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/fieldofflist.html">Field Officer List</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Daily Updated Data</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/updatebyFO.html">Field Officer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/updatebydoc.html">Docter </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/updatebysup.html">Supervisor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/updatebyDIStM.html">District Manager</a></li>
+
+              </ul>
+            </div>
+          </li>
+
+          <!-- new Extension -->
+          
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Extension</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic3">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">FullScreen</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Pace</a></li>
+              </ul>
+            </div>
+          </li> -->
+
+    
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/tables/basic-table.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Tables</span>
+            </a>
+          </li> -->
+    
+          <!-- new section Ecommerce pages -->
+    
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">E-commerce Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic4">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/addproduct.html">Add Product</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/editproduct.html">Edit Product</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/addarival.html">Add New Arrival Product</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/listnewproduct.html">List New Arrival Product</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/productdetails.html">Product Details </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/newarrival.html">New Arrival Product Details  </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Product Orders </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Product Checkout </a></li>
+              </ul>
+            </div>
+          </li>
+    
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/charts/chartjs.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i> hhhhhh
+              </span>
+              <span class="menu-title">Charts</span>
+            </a>
+          </li> -->
+    
+    
+          <!-- new section aunthentication pages -->
+    
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic5" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Authentication User </span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic5">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/auentecationuserrebort.html">All User</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/createuserform.html">Create User</a></li>
+              </ul>
+            </div>
+          </li>
+ 
+         
+          <!-- new section aunthentication rules pages -->
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic6" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Authentication Rules</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic6">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Index</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/createaroleform.html">Create</a></li>
+              </ul>
+            </div>
+          </li>
+
+          
+
+          <!-- new section aunthentication Claim pages -->
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic7" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Authentication Claim</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic7">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/claimindex.html">Index</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/admin_-panel/template/pages/ui-features/createclaimform.html">Create</a></li>
+              </ul>
+            </div>
+          </li>
+    
+          <!-- logout section  -->
+    
+           <li class="nav-item menu-items">
+            <a class="nav-link" href="">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+    
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li> -->
+    
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"></a>
+            <h1>W</h1>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" >
+              <span class="mdi mdi-menu"></span>
+            </button> -->
+
+            <!-- toggle button -->
+            <label class="containerr" >
+              <input type="checkbox" data-toggle="minimize">
+              <div class="checkmark">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+
+
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <!-- <input type="text" class="form-control" placeholder="Search products"> -->
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item dropdown d-none d-lg-block">
+                <!-- <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a> -->
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+                  <h6 class="p-3 mb-0">Projects</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-file-outline text-primary"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Software Development</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-web text-info"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">UI Development</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-layers text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all projects</p>
+                </div>
+              </li>
+              <!-- <li class="nav-item nav-settings d-none d-lg-block"> -->
+                <!-- <a class="nav-link" href="#"> -->
+                  <!-- <i class="mdi mdi-view-grid"></i> -->
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown border-left"> -->
+                <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <!-- <i class="mdi mdi-email"></i> -->
+                  <!-- <span class="count bg-success"></span> -->
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                  <!-- <h6 class="p-3 mb-0">Messages</h6> -->
+                  <!-- <div class="dropdown-divider"></div> -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="/admin_-panel/template/assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <!-- <p class="preview-subject ellipsis mb-1">Mark send you a message</p> -->
+                      <!-- <p class="text-muted mb-0"> 1 Minutes ago </p> -->
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="/admin_-panel/template/assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                      <p class="text-muted mb-0"> 15 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="/admin_-panel/template/assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                      <p class="text-muted mb-0"> 18 Minutes ago </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">4 new messages</p>
+                </div>
+              </li>
+             
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Notifications</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Event today</p>
+                      <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-link-variant text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Launch Admin</p>
+                      <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all notifications</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="/admin_-panel/template/assets/images/w logo.jpg" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Admin Host</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="dlt">
+                <div class="dlt1">
+                  <h3>
+                    UPDATED BY FIELD OFFICER
+                  </h3>
+    
+                  <!-- seach box  -->
+                  <div class="group" style="left: 50%;">
+                      <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                          <g>
+                              <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                          </g>
+                      </svg>
+                      <input placeholder="Search" type="search" class="input">
+                    </div>
+    
+                </div>
+    
+                <div class="template-demo" style="margin-left: 20px;">
+                  <div class="dropdown">
+                     <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuOutlineButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">No. of entries</button>
+                       <div class="dropdown-menu" aria-labelledby="dropdownMenuOutlineButton6">
+                         <!-- <h6 class="dropdown-header">Settings</h6> -->
+                         <a class="dropdown-item" href="#">10</a>
+                         <a class="dropdown-item" href="#">25</a>
+                         <a class="dropdown-item" href="#">50</a>
+                       
+                       </div>
+                   </div>
+                   
+           </div>
+    
+                  
+    
+    
+    
+                      <div class="tablexx" style="width: 100%;">
+                          <div class="table-responsive" style="margin-top: 50px; scrollbar-width: thin; border-radius: 10px; ">
+                            <table class="table table-dark" style="width: 120vw;">
+                                      <thead>
+                                        <tr>
+                                          <th>Sno.</th>
+                                          <th>Patient Name</th>
+                                          <th>Age</th>
+                                          <th>contact</th>
+                                          <th>Patient address</th>
+                                          <th>Date</th>
+                                          <th>Gender</th>
+                                          <th>PatientDescription</th>
+                                          <th>District</th>
+                                          <th>block</th>
+                                          <th>ReportURL</th>
+                                          <th>FO ID</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>1</td>
+                                        <td>John Doe</td>
+                                        <td>61254789354</td>
+                                        <td>john@example.com</td>
+                                        <td>xyz</td>
+                                        <td>kk</td>
+                                        <td>5154ssj</td>
+                                        <td>48946564987</td>
+                                        <td>k hjghk</td>
+                                        <td>45</td>
+                                        <td>5621642</td>
+                                        <td>221</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>John Doe</td>
+                                          <td>61254789354</td>
+                                          <td>john@example.com</td>
+                                          <td>xyz</td>
+                                          <td>kk</td>
+                                          <td>5154ssj</td>
+                                          <td>48946564987</td>
+                                          <td>k hjghk</td>
+                                          <td>45</td>
+                                          <td>5621642</td>
+                                          <td>221</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>John Doe</td>
+                                          <td>61254789354</td>
+                                          <td>john@example.com</td>
+                                          <td>xyz</td>
+                                          <td>kk</td>
+                                          <td>5154ssj</td>
+                                          <td>48946564987</td>
+                                          <td>k hjghk</td>
+                                          <td>45</td>
+                                          <td>5621642</td>
+                                          <td>221</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>John Doe</td>
+                                          <td>61254789354</td>
+                                          <td>john@example.com</td>
+                                          <td>xyz</td>
+                                          <td>kk</td>
+                                          <td>5154ssj</td>
+                                          <td>48946564987</td>
+                                          <td>k hjghk</td>
+                                          <td>45</td>
+                                          <td>5621642</td>
+                                          <td>221</td>
+                                        </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+    
+                       </div>
+            </div>          
+    
+          
+            
+    
+            </div>
+              
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © WayuMart.com 2024</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">  <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">WayuMart</a> from WayuMart.com</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+  </body>
+</html>
